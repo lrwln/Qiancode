@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>后代选择器和子选择器</title>
+  <style>
+    /* 后代选择器：选中所有指定元素的后代元素 */
+    .inner p {
+      color: red;
+    }
+
+    /* 子代选择器：选中所有指定元素的直接子元素 */
+    .d>span {
+      color: blue;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 后代选择器：选中所有指定元素的后代元素 -->
+  <div class="container">
+    <p>这是一个段落</p>
+    <div class="inner">
+      <p>这是一个段落</p>
+    </div>
+  </div>
+
+
+  <!-- 子代选择器 -->
+  <div class="d">
+    <span>儿子</span>
+    <p>
+      <span>孙子</span>
+    </p>
+  </div>
+
+</body>
+
+</html>

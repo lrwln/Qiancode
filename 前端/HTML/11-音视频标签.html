@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- 在H5中如果属性和值相等可以省略值 -->
+  <!-- <p>普通性写法 -->
+  <h1>视频标签</h1>
+  <!-- <video src="./media/xiaomi.mp4" controls width="500" poster="./img/唯美风景 天空 流星 4K壁纸 3840x2160_彼岸图网.jpg"></video> -->
+
+  注意：
+  1. controls属性可以添加视频控制器
+  2. width和height属性可以设置视频的宽度和高度
+  </p>
+  <p>
+    3. autoplay属性可以设置视频自动播放
+  </p>
+  <p>
+    4. loop属性可以设置视频循环播放
+  </p>
+  <p>
+    5. muted属性可以设置视频静音播放
+  </p>
+  <p>
+    6. poster属性可以设置视频封面
+  </p>
+  <p>
+    7. preload属性可以设置视频预加载
+  </p>
+  <!-- 兼容性写法 -->
+  <video controls width="500">
+    <source src="./media/xiaomi.mp4" type="video/mp4">
+    <p>您的浏览器不支持 video 标签 请升级您的浏览器</p>
+  </video>
+  <!-- <h1>音频标签</h1>普通写法 -->
+  <!-- <audio src="./media/1.mp3" controls></audio> -->
+  <p>
+    1. controls属性可以添加音频控制器
+  </p>
+  <p>
+    2. autoplay属性可以设置音频自动播放 注意：音频标签默认是不自动播放的 浏览器会禁用自动播放
+  </p>
+  <p>
+    3. loop属性可以设置音频循环播放
+  </p>
+  <p>
+    4. muted属性可以设置音频静音播放
+  </p>
+  兼容性写法
+  <audio controls>
+    <source src="./media/花海.mp3" type="audio/mp3">
+    <p>您的浏览器不支持 audio 标签 请升级您的浏览器</p>
+  </audio>
+
+</body>
+
+</html>

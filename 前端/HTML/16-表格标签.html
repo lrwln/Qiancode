@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h2>表格标签基本语法</h2>
+  <table border="1"> <!-- 表格边框 -->
+    <tr>
+      <th>姓名</th>
+      <th>年龄</th>
+      <th>成绩</th>
+    </tr>
+    <tr>
+      <th>张三</th>
+      <th>18</th>
+      <th>9033333</th>
+    </tr>
+    <tr>
+      <!-- th表头单元格 ：可以加粗居中 用于定义表格的表头单元格，通常用于显示列名或行名 一般放在tr标签中 -->
+      <th>李四</th>
+      <th>19</th>
+      <th>85</th>
+    </tr>
+  </table>
+
+  <br>
+  <table border="1">
+    <tr>
+      <td>姓名</td>
+      <td>年龄</td>
+      <td>成绩</td>
+    </tr>
+    <tr>
+      <td>张三</td>
+      <td>18</td>
+      <td>90</td>
+    </tr>
+    <tr>
+      <td>李四</td>
+      <td>19</td>
+      <td>85</td>
+    </tr>
+  </table>
+
+  <h2>表格结构标签</h2>
+  <!-- 表格结构标签的作用：将表格分成不同的部分，使表格更易读、更易维护 -->
+  <thead>
+    <tr>
+      <th>姓名</th>
+      <th>年龄</th>
+      <th>成绩</th>
+    </tr>
+  </thead>
+  <!-- thead作用：定义表格的表头部分，通常用于显示列名或行名 -->
+  <br>
+  <tbody>
+    <tr>
+      <td>张三</td>
+      <td>18</td>
+      <td>90</td>
+    </tr>
+    <tr>
+      <td>李四</td>
+      <td>19</td>
+      <td>85</td>
+    </tr>
+  </tbody>
+  <!-- tbody作用：定义表格的主体部分，通常用于显示表格的实际数据 -->
+  <br>
+  <tfoot>
+    <tr>
+      <td>王五</td>
+      <td>20</td>
+      <td>88</td>
+    </tr>
+  </tfoot>
+  <!-- tfoot作用：定义表格的页脚部分，通常用于显示汇总信息 -->
+  <br>
+  合并单元格的概念是：将多个单元格合并为一个单元格，使表格更易读、更易维护
+  <br>
+  合并单元格的方法：
+  <br>
+  1.合并行单元格：使用rowspan属性，将多个行单元格合并为一个行单元格
+  <br>
+  2.合并列单元格：使用colspan属性，将多个列单元格合并为一个列单元格
+
+</body>
+
+</html>
