@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <h2>图片 音频 视频</h2>
+    <!-- 图片 -->
+    <img src="./img/1.jpg" alt="普同截图" width="100%" title="普通截图">
+    <!-- 音频 -->
+    <audio src="../HTML/media/花海.mp3" controls autoplay loop muted></audio>
+    <!-- 视频 -->
+    <video src="./media/xiaomi.mp4" controls loop muted poster="./img/1.jpg" width="100%"></video>
+
+    <!-- 多格式兼容写法 -->
+    <audio width="100%">
+        <source src="./media/花海.mp3">
+        您的浏览器不支持音频播放
+    </audio>
+    <video width="100%">
+        <source src="./media/xiaomi.mp4">
+        您的浏览器不支持音频播放
+    </video>
+    <h2>链接与导航</h2>
+    <h3>链接</h3>
+    <a href="www.deepseek.com" target="_blank" title="悬停提示">www.deepseek.com</a>
+    <!-- href是连接目标地址 -->
+    <!-- src为文件路径 -->
+    <a href="./img/1.jpg" download>下载图片</a>
+    <a href="#"> </a>
+    <a href="./01-天才的诞生.html" target="_blank">关于我们</a>
+    <a href="tel:1110">拨打电话</a>
+    <a href="mailto:2766394102@qq.com">发送邮件</a>
+    <h3>导航</h3>
+    定义锚点
+    <h2 id="section1">第一部分</h2>
+    <h2 id="section2">第二部分</h2>
+    <h2 id="section3">第三部分</h2>
+
+    <!-- nav代表导航栏部分 -->
+    <nav>
+        <h3>目录</h3>
+        <ul>
+            <li><a href="#chapter1">第一章</a></li>
+            <li><a href="#chapter2">第二章</a></li>
+            <li><a href="#chapter3">第三章</a></li>
+        </ul>
+    </nav>
+
+    <article>
+        <h2 id="chapter1">第一章</h2>
+        <p>
+            《斗破苍穹》是中国网络作家天蚕土豆创作的玄幻小说，2009年4月14日起在起点中文网连载，2011年7月20日完结，首版由湖北少年儿童出版社出版。2010年7月，该作品部分章节被编为《废材当自强》由湖北少年儿童出版社出版
+            [22]。小说以斗气大陆为背景，讲述天才少年萧炎从斗气尽失逐步成长为斗帝的历程，期间通过收集异火、修炼丹药突破困境，最终解开斗帝失踪之谜并前往大千世界
+        </p>
+
+        <h2 id="chapter2">第二章</h2>
+        <p>作品构建了炼药师体系、异火榜及天鼎榜等设定，其中炼药师需具备火木双属性斗气与灵魂感知力，灵魂境界划分为凡境→灵境→天境→帝境
+            [11]。该小说全网点击量近100亿次，实体书累计销量超300万册，2017年7月荣登“2017猫片胡润原创文学IP价值榜”榜首。伴随作品成功涌现出1000余部同人小说，衍生出游戏、动漫、影视等文化产业
+            [13-14]。2020年8月被国家图书馆永久典藏并位列中国文化产业IP价值综合榜TOP50前五，改编动画在腾讯视频创下2.6万热度值纪录，并推出必胜客联名等商业合作
+        </p>
+
+
+        <h2 id="chapter3">第三章</h2>
+        <p>幻维数码制作的动画年番《斗破苍穹》重现佛怒火莲等经典场景，多次入围华语剧集口碑榜前十 [24]。2025年1月入选“2024网络文学神作榜”，同年2月28日荣获2024阅文IP盛典20大荣耀IP [15-16]
+            [30]。2025年11月，上海金山区人民法院宣判国内首例AI著作权侵权案，用户擅自使用《斗破苍穹》角色“美杜莎”形象训练AI模型被判赔偿5万元
+        </p>
+
+    </article>
+    <h2>页面布局</h2>
+    <h3>div标签(块级容器)</h3>
+    <div class="comtainer">
+        <div class="header">头部区域</div>
+        <div class="content">内容区域</div>
+        <div class="fotter">底部区域</div>
+    </div>
+    <h3>span 标签 行内容器</h3>
+    <p>这是一段<span style="color: red;">红色</span>的文字</p>
+    <h3>语义化布局标签</h3>
+    <header>
+        <nav>导航栏</nav>
+    </header>
+    <main>
+        <article>
+            <section>chapter1</section>
+            <section>chapter2</section>
+        </article>
+        <aside>侧边栏</aside>
+    </main>
+
+    <footer>页脚</footer>
+    <h2>列表标签</h2>
+    <h3>无序列表</h3>
+    <ul>
+        <li>苹果</li>
+        <li>香蕉</li>
+        <li>橙子</li>
+    </ul>
+    <h3>有序列表</h3>
+    <ol type="I">
+        <li>第一步：准备材料</li>
+        <li>第二步:开始制作</li>
+        <li>第三步：完成</li>
+    </ol>
+    <h3>定义列表</h3>
+    <dl>
+        <dt>要定义的术语</dt>
+        <dd>术语描述</dd>
+        <p>eg:</p>
+        <dt>HTML</dt>
+        <dd>超文本标记语言，用于创建网页结构</dd>
+
+        <dt>CSS</dt>
+        <dd>层叠样式表，用于美化网页</dd>
+
+        <dt>JavaScript</dt>
+        <dd>脚本语言，用于实现网页交互</dd>
+    </dl>
+    <h3>列表嵌套</h3>
+    <ul>
+        <li>水果
+            <ul>
+                <li>苹果</li>
+                <li>香蕉</li>
+            </ul>
+        </li>
+        <li>蔬菜
+            <ul>
+                <li>白菜</li>
+                <li>萝卜</li>
+            </ul>
+        </li>
+    </ul>
+    <em>注意： 子列表必须放在 < li> 标签内部</em>
+
+    <h2>表格标签</h2>
+
+    <table border="2">
+        <caption>表格标题</caption>
+        <thead>
+            <tr>
+                <th>表头1</th>
+                <th>表头2</th>
+                <th>表头3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="3">数据1</td>
+                <td>数据2</td>
+                <td>数据3</td>
+            </tr>
+            <tr>
+                <td>数据4</td>
+                <td>数据5</td>
+                <td>数据6</td>
+            </tr>
+        </tbody>
+
+        <table border="1">
+            <tr>
+                <td colspan="3">跨越3列</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+        </table>
+    </table>
+
+
+
+    <h2>表单标签</h2>
+    <h3>表单基本结构</h3>
+    <form action="提交地址" method="提交方式">
+        <!-- 表单控件 -->
+        <button type="submit">提交</button>
+    </form>
+    <h3>控件 input输入控件</h3>
+    <h4>文本类输入</h4>
+    <input type="text" name="username" placeholder="请输入用户名">
+    <input type="password" name="password" placeholder="请输入密码">
+    <!-- 邮箱（自动验证格式） -->
+    <input type="email" name="email" placeholder="请输入邮箱">
+    <input type="tel" name="phone" placeholder="请输入电话">
+
+    <input type="url" name="website" placeholder="请输入网址">
+    <!-- 搜索框 -->
+    <input type="search" name="kevword" placeholder="搜索">
+    <h4>选择类输入</h4>
+    <!-- 单选按钮（同name互斥） -->
+    <input type="radio" name="gender" value="male" id="male" checked>
+    <label for="male">男</label>
+    <input type="radio" name="gender" id="female" value="female">
+    <label for="female">女</label>
+
+    <!-- 复选框 -->
+    <input type="checkbox" name="hobby" id="reading" value="reading">
+    <label for="reading">阅读</label>
+    <input type="checkbox" name="hobby" id="music" value="music">
+    <label for="music">音乐</label>
+    <h3>下拉选择框</h3>
+    <select name="city">
+        <option value="beijing" selected>北京</option>
+        <option value="shanghai">上海</option>
+        <option value="guangzhou">广州</option>
+    </select>
+
+    <h3>标签关联</h3>
+    <label for="username">用户名：</label>
+    <input type="text" id="username" name="username">
+
+    <!-- 方式二：包裹形式 -->
+    <label>
+        密码：
+        <input type="password" name="password">
+    </label>
+
+
+</body>
+
+</html>
