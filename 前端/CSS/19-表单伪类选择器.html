@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            width: 200px;
+            height: 40px;
+            background-color: red;
+            color: blue;
+            border: none;
+            font-size: 20px;
+        }
+
+        button:disabled {
+            /* background-color: black; */
+            /* 透明度 0~1 作用于整个盒子 */
+            opacity: .4;
+        }
+
+        /* 伪类被选中选择器 */
+        input:checked+label {
+            color: orange;
+        }
+
+        /* 伪类元素选择器 */
+        /* 选择首行 */
+        p::first-line {
+            color: red;
+        }
+
+        /* 选择首字 */
+        p::first-letter {
+            color: blue;
+        }
+
+        /* 选择placeholder */
+        textarea::placeholder {
+            color: red;
+            font-size: 15px;
+            /* 水平居中 */
+            text-align: center;
+            /* 垂直居中 用到line行高 */
+            line-height: 100px;
+        }
+
+        textarea {
+            width: 120px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <button disabled>注册</button>
+    <br>
+
+    <input type="checkbox" id="agree">
+    <label for="agree">同意用户协议</label> -->
+
+    <!-- .是类选择器 :是伪类选择器 ::是伪元素选择器 -->
+    <p>
+        这是一段文字这是一段文字这是一段文字这是一段文字
+        这是一段文字这是一段文字这是一段文字这是一段文字
+        这是一段文字这是一段文字这是一段文字这是一段文字
+        这是一段文字这是一段文字这是一段文字这是一段文字
+        这是一段文字这是一段文字这是一段文字这是一段文字
+        这是一段文字这是一段文字这是一段文字这是一段文字
+    </p>
+    <!-- 提交密码和用户名时用到input -->
+    <textarea name="" id="" placeholder="请输入文字"></textarea>
+    <input type="text" placeholder="请输入用户名">
+
+
+
+</body>
+
+</html>

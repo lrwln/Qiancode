@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>结构伪类选择器</title>
+    <style>
+        .ul1 li:first-child {
+            color: blue;
+        }
+
+        .ul1 li:nth-child(2) {
+            color: blue;
+        }
+
+        .ul1 li:last-child {
+
+            color: blue;
+        }
+
+
+        .ul2 li:nth-child(odd) {
+            color: red;
+
+        }
+
+        .ul2 li:nth-child(even) {
+            color: blue;
+
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="ul1">
+        <li>一</li>
+        <li>二</li>
+        <li>三</li>
+        <li>四</li>
+        <li>五</li>
+        <li>六</li>
+        <li>七</li>
+        <li>八</li>
+        <li>九</li>
+        <li>十</li>
+    </ul>
+    <ul class="ul2">
+        <li>一</li>
+        <li>二</li>
+        <li>三</li>
+        <li>四</li>
+        <li>五</li>
+        <li>六</li>
+        <li>七</li>
+        <li>八</li>
+        <li>九</li>
+        <li>十</li>
+    </ul>
+</body>
+
+</html>

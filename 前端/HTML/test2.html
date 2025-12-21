@@ -107,7 +107,7 @@
             line-height: 36px;
         }
     </style> -->
-    <style>
+    <!-- <style>
         .box {
             font: italic 700 18px/1.5 "宋体";
 
@@ -115,22 +115,58 @@
 
 
         }
+    </style> -->
+    <style>
+        /* 链接伪类选择器 针对于链接 */
+        /* link 未被访问的链接的初始化状态 */
+        a:link {
+            color: black;
+            /* 去除下划线 */
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: blue;
+
+        }
+
+        a:hover {
+            color: red;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: yellow;
+            /* line through继承文字的内容 */
+            text-decoration: line-through;
+            text-decoration-color: black
+        }
+
+
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            color: aqua;
+            text-align: center;
+            line-height: 200px;
+        }
+
+        .box:hover {
+            background-color: blue;
+            color: yellow;
+
+
+        }
     </style>
-
-
-
-
 </head>
 
 <body>
-
-    <div class="box">
-        <p>font的简写和继承性<span>我是孙子</span></p>
-        <span>我也是儿子</span>
-    </div>
-
-
-
+    <a href="www.deepseek.com">deepseek</a>
+    <a href="#1">关于我</a>
+    <a href="#2">联系们</a>
+    <a href="#3">1</a>
+    <div class="box">文字</div>
 
 </body>
 
