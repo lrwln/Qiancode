@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* id选择器不允许以纯数字出现 */
+        #id .son #id2 {
+            color: red;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <div class="box"></div>
+    <div id="3"></div>
+    <div id="id">
+        <p class="son">
+            <span id="id2">
+                内层
+            </span>
+        </p>
+    </div>
+
+</body>
+
+</html>

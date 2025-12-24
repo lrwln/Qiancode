@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div[class*="box"] {
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+
+        }
+
+        .box1 {
+            border: 1px solid black;
+            /*实线*/
+        }
+
+        .box2 {
+            border: 1px dashed black;
+            /*虚线*/
+        }
+
+        .box3 {
+            border: 1px dotted black;
+            /*点线*/
+        }
+
+        .box4 {
+            border-top: 2px solid red;
+            border-right: 4px dashed green;
+            border-bottom: 6px dotted blue;
+            /* border-left: 8px double orange; */
+            /*不同边框*/
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <!-- css盒子由内容 内边距padding 外边距margin 边框border四个部分组成 -->
+    <!-- 边框与内容的边距就是内边距padding -->
+    <!-- 盒子与其他内容/元素的距离就是外边距margin -->
+
+
+
+    <div class="box1">实线</div>
+    <div class="box2">虚线</div>
+    <div class="box3">点线</div>
+    <div class="box4">不同边框</div>
+    <div class="box5">不同边框</div>
+    <div class="box6">不同边框</div>
+
+
+
+
+
+
+</body>
+
+</html>
