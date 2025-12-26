@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        [class^=box] {
+
+            width: 200px;
+            height: 200px;
+            background-color: skyblue;
+
+
+        }
+
+        .box1 {
+            margin: 10px;
+        }
+
+        .box2 {
+            margin: 10px;
+            background-color: pink;
+
+        }
+
+        /* 垂直方向上相邻的外边距会取较大值,而不是相加: */
+        span {
+            /* 1.行内盒子的宽高没有用 */
+            height: 100px;
+            width: 100px;
+            background-color: skyblue;
+            /* 2.行内盒子的上下外边距margin无效 左右边距 和内边距padding和border都有用的 */
+            margin: 20px;
+            padding: 10px;
+            border: 10px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">第一个盒子</div>
+    <div class="box2">第二个盒子</div>
+    <span>行内盒子</span>
+    <span>行内盒子</span>
+
+</body>
+
+</html>

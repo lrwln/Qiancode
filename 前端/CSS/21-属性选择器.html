@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>属性选择器</title>
+    <style>
+        /* a[class=font] {
+            color: red;
+
+
+        } */
+
+        a[class*=f] {
+            color: red;
+
+
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        input[type=password],
+        input[type=text] {
+            outline: none;
+        }
+    </style>
+
+    <!-- [属性]
+匹配包含指定属性的元素
+[属性=值]
+匹配属性值等于指定值的元素
+[属性^=值]
+匹配属性值以指定字符串开头的元素
+[属性$=值]
+匹配属性值以指定字符串结尾的元素。
+[属性*=值]
+不能只有数字
+匹配属性值任意位置包含指定子串的元素 -->
+
+
+</head>
+
+<body>
+    <a href="#" class="font">看这里</a><br>
+    <a href="#" class="font4">看这里</a><br>
+    <a href="#" class="font24">看这里</a><br>
+    <a href="#" class="font3">看这里</a><br>
+    <a href="#" class="font23">看这里</a><br>
+    <a href="#" class="font5">看这里</a><br>
+    <a href="#" class="font23">看这里</a><br>
+
+    <input type="text">
+    <input type="password">
+    <input type="checkbox" name="" id="">
+    <input type="radio" name="" id="">
+</body>
+
+</html>
