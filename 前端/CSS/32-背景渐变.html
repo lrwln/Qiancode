@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 300px;
+            height: 100px;
+            background: linear-gradient(90deg, pink, red);
+            /* 背景渐变通常由设计师设计 */
+        }
+
+        .text {
+            font-size: 30px;
+            background: linear-gradient(to right, red, blue);
+            -webkit-background-clip: text;
+            /* 兼容性写法 */
+            /* 背景以文字形式裁剪 */
+            background-clip: text;
+            /* 文本填充颜色 为透明 */
+            -webkit-text-fill-color: transparent;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+
+    </div>
+    <div class="text">渐变颜色的文字示例</div>
+</body>
+
+</html>

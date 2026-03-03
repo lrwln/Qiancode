@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 2000px;
+        }
+
+        .box1 {
+
+            width: 1000px;
+            height: 10000px;
+            /* 复合写法的规则: 从左到右依次是背景颜色、背景图片、背景是否平铺、背景图片位置、背景图片大小 */
+
+            /* 复合写法 */
+            background: skyblue url(../HTML/img/1.jpg) no-repeat center center/300px;
+
+            /* background-color: red; */
+            /* background-image: url(../HTML/img/1.jpg); */
+            /* background-repeat: no-repeat;默认平铺 */
+            /* background-repeat: repeat-x; 横向平铺 */
+            /* background-repeat: repeat-y; 竖向平铺 */
+            /* background-position: x y; */
+            /* background-position: 50px 10px; */
+            /* background-position: 50% 50%;图片居中 */
+            /* 如果只写一个值，另一个值默认是center */
+            /* background-position: center; */
+            /* background-position: left;方位坐标对齐对应位置 */
+            /* background-size: cover;图片包含盒子，图片等比例放大缩小铺满盒子，可能会裁剪图片 即图片可能无法全部显示*/
+            /* background-size: contain; */
+            /* 盒子包含图片，图片等比例放大缩小铺满盒子，图片全部显示，盒子可能会有空白 */
+            /* 如果盒子被覆盖了图片就不会显示 fixed也就没用了  */
+            /* background-attachment: fixed;范围和固定位置相对于可视区域  */
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="box1">
+
+    </div>
+
+</body>
+
+</html>
