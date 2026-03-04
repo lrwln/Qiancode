@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* css初始化 */
+        * {
+            margin: 0;
+            padding: 0;
+            /* 清除默认外边距和内边距让元素紧贴在一起 */
+            box-sizing: border-box;
+            /* 作用是让元素的padding和border包含在width和height内 */
+        }
+
+        body {
+            background-color: #f0f0f0;
+        }
+
+        .box {
+            width: 234px;
+            height: 300px;
+            background-color: white;
+            text-align: center;
+            margin: 100px auto;
+            transition: all .3s;
+
+        }
+
+        .box:hover {
+            box-shadow: 0 15px 30px rgba(0, 0, 0, .1);
+            /* 鼠标悬停时添加阴影效果 */
+        }
+
+        .box img {
+            width: 160px;
+            height: 160px;
+            margin-top: 20px;
+        }
+
+        .box .title {
+            font-size: 16px;
+            font-weight: normal;
+            color: #333;
+            margin-top: 18px;
+        }
+
+        .box .desc {
+            font-size: 12px;
+            color: #b0b0b0;
+            /* 文本溢出省略 */
+            /* 溢出文字隐藏 */
+            overflow: hidden;
+            /* 单行文本溢出显示省略号 */
+            text-overflow: ellipsis;
+            /* 强制文本在一行内显示 */
+            white-space: nowrap;
+            padding: 0 15px;
+
+
+            /* 多行文本溢出显示省略号 */
+            display: -webkit-box;
+            /* 文本垂直排列 */
+            -webkit-box-orient: vertical;
+            /* 限制显示行数 */
+            -webkit-line-clamp: 2;
+            /* 隐藏溢出内容 */
+            overflow: hidden;
+            /* 文本溢出显示省略号 */
+            text-overflow: ellipsis;
+
+
+
+        }
+
+        .box .price {
+            font-size: 14px;
+            color: #b0b0b0;
+            margin-top: 10px;
+        }
+
+        .box .price span {
+            color: #ff6700;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <img src="../HTML/img/pms_1769685660.35453752.jpg" alt="">
+        <h3 class="title">REDMI Buds 8 Pro</h3>
+        <p class="desc">55dB深度降噪 | 新增智能查找 | 同档罕见同轴三单元</p>
+        <p class="price">
+            <span>659元</span>
+            <del>699元</del>
+        </p>
+    </div>
+</body>
+
+</html>
