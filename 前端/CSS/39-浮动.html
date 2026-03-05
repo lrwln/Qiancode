@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ol,
+        ul {
+            list-style: none;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .box {
+            width: 600px;
+            height: 500px;
+            background-color: #ccc;
+            margin: 100px auto;
+        }
+
+        .box li {
+            width: 190px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            margin-right: 15px;
+            margin-bottom: 15px;
+        }
+
+        .box li:nth-child(odd) {
+            background-color: red;
+            float: left;
+        }
+
+        .box li:nth-child(even) {
+            background-color: green;
+            float: left;
+        }
+
+        .box li:nth-child(3n) {
+            background-color: blue;
+            float: left;
+            margin-right: 0;
+        }
+    </style>
+    .box <li></li>
+</head>
+
+<body>
+    <ul class="box">
+        <li>
+            第一个
+        </li>
+        <li>
+            第二个
+
+        </li>
+        <li>
+            第三个
+        </li>
+        <li>
+            第一个
+        </li>
+        <li>
+            第二个
+
+        </li>
+        <li>
+            第三个
+        </li>
+    </ul>
+</body>
+
+</html>
